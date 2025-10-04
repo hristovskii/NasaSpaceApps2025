@@ -137,29 +137,6 @@ export default function LearnPage() {
     setOpenCard(openCard === id ? null : id);
   };
 
-  const getColorClasses = (color: string) => {
-    const colors = {
-      primary:
-        "border-primary/30 hover:border-primary/60 hover:shadow-primary/20",
-      secondary:
-        "border-secondary/30 hover:border-secondary/60 hover:shadow-secondary/20",
-      accent: "border-accent/30 hover:border-accent/60 hover:shadow-accent/20",
-      success:
-        "border-success/30 hover:border-success/60 hover:shadow-success/20",
-    };
-    return colors[color as keyof typeof colors] || colors.primary;
-  };
-
-  const getGradientClass = (color: string) => {
-    const gradients = {
-      primary: "from-primary/10 to-primary/5",
-      secondary: "from-secondary/10 to-secondary/5",
-      accent: "from-accent/10 to-accent/5",
-      success: "from-success/10 to-success/5",
-    };
-    return gradients[color as keyof typeof gradients] || gradients.primary;
-  };
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-secondary/5 text-foreground relative overflow-hidden">
       <Starfield />
@@ -211,19 +188,15 @@ export default function LearnPage() {
                 return (
                   <Card
                     key={fact.id}
-                    className={`overflow-hidden border-2 transition-all duration-300 cursor-pointer ${getColorClasses(
-                      fact.color
-                    )} ${isOpen ? "shadow-xl" : "hover:shadow-lg"}`}
+                    className={`overflow-hidden border-2 transition-all duration-300 cursor-pointer  ${
+                      isOpen ? "shadow-xl" : "hover:shadow-lg"
+                    }`}
                     onClick={() => toggleCard(fact.id)}
                     style={{
                       animationDelay: `${index * 0.1}s`,
                     }}
                   >
-                    <div
-                      className={`p-6 bg-gradient-to-r ${getGradientClass(
-                        fact.color
-                      )}`}
-                    >
+                    <div className="p-6 md:p-8">
                       <div className="flex items-center justify-between gap-4">
                         <div className="flex items-center gap-4 flex-1">
                           <div

@@ -331,7 +331,7 @@ export default function SimulatorPage() {
                           <div className="text-sm text-muted-foreground mb-2 font-medium">
                             Crater Diameter
                           </div>
-                          <div className="text-4xl font-black text-secondary mb-1">
+                          <div className="text-4xl font-black text-blue-500 mb-1">
                             {craterSize.toFixed(1)} km
                           </div>
                           <div className="text-xs text-muted-foreground">
@@ -386,7 +386,7 @@ export default function SimulatorPage() {
                       </h3>
                       <p className="text-muted-foreground max-w-sm">
                         Configure your impact parameters and click{" "}
-                        <span className="text-accent font-bold">
+                        <span className="text-success font-bold">
                           Calculate Impact
                         </span>{" "}
                         to see the results

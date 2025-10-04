@@ -294,7 +294,7 @@ export default function GamePage() {
               <div className="flex items-center gap-4">
                 <div className="text-sm">
                   <span className="text-muted-foreground">High Score: </span>
-                  <span className="text-accent font-bold">{highScore}</span>
+                  <span className="text-success font-bold">{highScore}</span>
                 </div>
                 <Link href="/quiz">
                   <Button variant="outline" size="sm">
@@ -310,7 +310,7 @@ export default function GamePage() {
           <div className="max-w-4xl mx-auto space-y-8">
             {/* Title */}
             <div className="text-center space-y-4">
-              <h1 className="text-4xl md:text-6xl font-black text-accent">
+              <h1 className="text-4xl md:text-6xl font-black text-red-800">
                 Meteor Blaster
               </h1>
               <p className="text-xl text-muted-foreground">
@@ -337,8 +337,8 @@ export default function GamePage() {
                     {combo > 0 && (
                       <div className="px-4 py-2 bg-accent/20 backdrop-blur-md border-2 border-accent/50 rounded-full animate-bounce-in">
                         <div className="flex items-center gap-2">
-                          <Zap className="h-4 w-4 text-accent" />
-                          <span className="text-sm font-bold text-accent">
+                          <Zap className="h-4 w-4 text-success" />
+                          <span className="text-sm font-bold text-success">
                             x{combo + 1} COMBO!
                           </span>
                         </div>
@@ -358,7 +358,7 @@ export default function GamePage() {
                       transform: "translate(-50%, -50%)",
                     }}
                   >
-                    <span className="text-2xl font-bold text-accent drop-shadow-lg">
+                    <span className="text-2xl font-bold text-success drop-shadow-lg">
                       +{popup.points}
                     </span>
                   </div>
@@ -452,7 +452,7 @@ export default function GamePage() {
                           Click, tap, or press SPACE
                         </p>
                         <p className="flex items-center justify-center gap-2">
-                          <span className="text-accent font-bold">Combo:</span>{" "}
+                          <span className="text-red-500 font-bold">Combo:</span>{" "}
                           Hit multiple meteors in a row!
                         </p>
                       </div>
@@ -485,7 +485,7 @@ export default function GamePage() {
                           </span>
                         </p>
                         {score === highScore && score > 0 && (
-                          <div className="flex items-center justify-center gap-2 text-accent animate-bounce-in">
+                          <div className="flex items-center justify-center gap-2 text-success animate-bounce-in">
                             <Trophy className="h-5 w-5" />
                             <span className="font-bold">New High Score!</span>
                           </div>
@@ -521,14 +521,14 @@ export default function GamePage() {
                   Click or press SPACE to fire
                 </p>
               </Card>
-              <Card className="p-4 bg-accent/10 border-accent/30 text-center hover:scale-105 transition-transform">
+              <Card className="p-4 bg-primary/10 border-primary/30 text-center hover:scale-105 transition-transform">
                 <div className="text-3xl mb-2">⚡</div>
                 <h4 className="font-bold mb-1">Build Combos</h4>
                 <p className="text-sm text-muted-foreground">
                   Hit meteors rapidly for bonus points
                 </p>
               </Card>
-              <Card className="p-4 bg-secondary/10 border-secondary/30 text-center hover:scale-105 transition-transform">
+              <Card className="p-4 bg-primary/10 border-primary/30 text-center hover:scale-105 transition-transform">
                 <div className="text-3xl mb-2">🏆</div>
                 <h4 className="font-bold mb-1">High Score</h4>
                 <p className="text-sm text-muted-foreground">

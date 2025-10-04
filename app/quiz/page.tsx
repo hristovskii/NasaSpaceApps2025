@@ -192,8 +192,8 @@ export default function QuizPage() {
                 </div>
                 {streak > 1 && (
                   <div className="flex items-center gap-2 px-3 py-1.5 bg-accent/10 border border-accent/30 rounded-full animate-bounce-in">
-                    <Zap className="h-4 w-4 text-accent" />
-                    <span className="text-sm font-bold text-accent">
+                    <Zap className="h-4 w-4 text-success" />
+                    <span className="text-sm font-bold text-success">
                       {streak} Streak!
                     </span>
                   </div>
@@ -293,7 +293,7 @@ export default function QuizPage() {
                     {isCorrect ? (
                       <CheckCircle2 className="h-8 w-8 text-success flex-shrink-0 mt-0.5" />
                     ) : (
-                      <XCircle className="h-8 w-8 text-accent flex-shrink-0 mt-0.5" />
+                      <XCircle className="h-8 w-8 text-success flex-shrink-0 mt-0.5" />
                     )}
                     <div>
                       <p className="font-bold text-lg mb-2">

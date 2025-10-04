@@ -16,7 +16,6 @@ export default function Home() {
               <div className="flex items-center gap-2">
                 <div className="relative">
                   <Zap className="h-7 w-7 text-primary animate-pulse-glow" />
-                  <Sparkles className="h-4 w-4 text-secondary absolute -top-1 -right-1" />
                 </div>
                 <h1 className="text-2xl font-bold text-foreground">
                   Meteor Madness
@@ -64,7 +63,7 @@ export default function Home() {
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-primary/20 via-secondary/20 to-accent/20 border border-primary/30 rounded-full text-sm font-semibold mb-4">
                 <Sparkles className="h-4 w-4 text-primary" />
                 <span className="text-primary">
-                  NASA Space Apps Challenge 2024
+                  NASA Space Apps Challenge 2025
                 </span>
               </div>
               <h2 className="text-5xl md:text-7xl font-black text-balance leading-tight">
@@ -172,7 +171,8 @@ export default function Home() {
                     from CNEOS and PDCO
                   </p>
                 </Card>
-                <Card className="p-6 bg-gradient-to-br from-secondary/10 to-secondary/5 border-2 border-secondary/30 hover:shadow-xl transition-shadow">
+
+                <Card className="p-6 bg-gradient-to-br from-primary/10 to-primary/5 border-2 border-primary/30 hover:shadow-xl transition-shadow">
                   <div className="text-4xl mb-4">🎯</div>
                   <h4 className="font-bold text-lg mb-2 text-foreground">
                     Interactive Learning
@@ -182,7 +182,8 @@ export default function Home() {
                     for better retention
                   </p>
                 </Card>
-                <Card className="p-6 bg-gradient-to-br from-accent/10 to-accent/5 border-2 border-accent/30 hover:shadow-xl transition-shadow">
+
+                <Card className="p-6 bg-gradient-to-br from-primary/10 to-primary/5 border-2 border-primary/30 hover:shadow-xl transition-shadow">
                   <div className="text-4xl mb-4">🚀</div>
                   <h4 className="font-bold text-lg mb-2 text-foreground">
                     Planetary Defense
@@ -195,24 +196,24 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="pt-12 max-w-3xl mx-auto">
+            <div className="pt-12 mx-auto border-2 border-border/30 rounded-lg">
               <Card className="p-8 bg-gradient-to-br from-accent/10 via-secondary/10 to-primary/10 border-2 border-accent/30 backdrop-blur-sm hover:shadow-2xl transition-shadow">
-                <div className="flex items-start gap-4">
-                  <div className="text-4xl animate-rotate-slow">☄️</div>
-                  <div className="text-left">
-                    <h3 className="text-2xl font-bold mb-3 text-foreground">
-                      About Impactor-2025
-                    </h3>
-                    <p className="text-muted-foreground leading-relaxed text-balance">
-                      Impactor-2025 is a fictional asteroid used for educational
-                      purposes. While not real, it represents the type of
-                      near-Earth objects that scientists monitor daily.
-                      Understanding asteroid impacts helps us prepare for
-                      planetary defense and appreciate the importance of space
-                      science.
-                    </p>
-                  </div>
+              <div className="flex items-start gap-4">
+                <div className="text-4xl animate-rotate-slow">☄️</div>
+                <div className="text-left">
+                <h3 className="text-2xl font-bold mb-3 text-foreground">
+                  About Impactor-2025
+                </h3>
+                <p className="text-muted-foreground leading-relaxed text-balance">
+                  Impactor-2025 is a fictional asteroid used for educational
+                  purposes. While not real, it represents the type of
+                  near-Earth objects that scientists monitor daily.
+                  Understanding asteroid impacts helps us prepare for
+                  planetary defense and appreciate the importance of space
+                  science.
+                </p>
                 </div>
+              </div>
               </Card>
             </div>
           </div>
@@ -222,8 +223,16 @@ export default function Home() {
         <footer className="border-t border-border/50 mt-20 backdrop-blur-sm bg-background/50">
           <div className="container mx-auto px-4 py-8 text-center">
             <p className="text-sm text-muted-foreground mb-2">
-              Created for NASA Space Apps Challenge 2025 • Hosted at Base42,
-              Skopje, Macedonia
+              Created for NASA Space Apps Challenge 2025 • Hosted at{" "}
+              <a
+                href="https://base42.mk/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-success font-bold hover:text-success/80 transition-colors underline"
+              >
+                Base42
+              </a>
+              , Skopje, Macedonia
             </p>
             <div className="flex justify-center gap-4 text-xs text-muted-foreground">
               <Link

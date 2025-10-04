@@ -65,7 +65,7 @@ export default function ResultPage() {
         emoji: "🌟",
         message: "Good effort! Keep learning about these cosmic threats.",
         color: "from-secondary to-secondary/70",
-        textColor: "text-secondary",
+        textColor: "text-blue-500",
       };
     } else {
       return {
@@ -74,7 +74,7 @@ export default function ResultPage() {
         message:
           "Don't worry! Every expert started somewhere. Try again to improve your score!",
         color: "from-accent to-accent/70",
-        textColor: "text-accent",
+        textColor: "text-success",
       };
     }
   };
@@ -158,8 +158,8 @@ export default function ResultPage() {
               </Card>
 
               <Card className="p-6 bg-gradient-to-br from-secondary/20 to-secondary/10 border-2 border-secondary/40 text-center hover:scale-105 transition-transform">
-                <Target className="h-10 w-10 text-secondary mx-auto mb-3" />
-                <div className="text-3xl font-black text-secondary mb-1">
+                <Target className="h-10 w-10 text-blue-500 mx-auto mb-3" />
+                <div className="text-3xl font-black text-blue-500 mb-1">
                   {percentage}%
                 </div>
                 <div className="text-sm text-muted-foreground font-medium">
@@ -168,8 +168,8 @@ export default function ResultPage() {
               </Card>
 
               <Card className="p-6 bg-gradient-to-br from-accent/20 to-accent/10 border-2 border-accent/40 text-center hover:scale-105 transition-transform">
-                <Zap className="h-10 w-10 text-accent mx-auto mb-3" />
-                <div className="text-3xl font-black text-accent mb-1">
+                <Zap className="h-10 w-10 text-success mx-auto mb-3" />
+                <div className="text-3xl font-black text-success mb-1">
                   {totalQuestions}
                 </div>
                 <div className="text-sm text-muted-foreground font-medium">

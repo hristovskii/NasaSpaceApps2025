@@ -29,7 +29,7 @@ export default function CreditsPage() {
                 About This Project
               </h1>
               <p className="text-xl text-muted-foreground text-pretty max-w-2xl mx-auto leading-relaxed">
-                Created for the NASA Space Apps Challenge 2024
+                Created for the NASA Space Apps Challenge 2025
               </p>
             </div>
 
@@ -64,9 +64,9 @@ export default function CreditsPage() {
               <div className="grid md:grid-cols-3 gap-6">
                 <Card className="p-6 bg-card/90 backdrop-blur-sm border-2 border-primary/30 hover:border-primary/60 hover:shadow-xl hover:shadow-primary/20 transition-all duration-300 hover:scale-105">
                   <div className="flex flex-col items-center text-center space-y-4">
-                    <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-primary/50 shadow-lg">
+                    <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-primary/50 shadow-lg">
                       <img
-                        src="/team-member-3.png"
+                        src="/teo.jpg"
                         alt="Teodor Krstevski"
                         className="w-full h-full object-cover"
                       />
@@ -75,14 +75,14 @@ export default function CreditsPage() {
                       <h3 className="text-2xl font-bold text-foreground">
                         Teodor Krstevski
                       </h3>
-                      <p className="text-secondary font-semibold mb-2">
+                      <p className="text-blue-500 font-semibold mb-2">
                         Computer Science & Engineering Student
                       </p>
                       <p className="text-sm text-muted-foreground leading-relaxed">
                         CSE student at FINKI (Faculty of Computer Science and
-                        Engineering), passionate about web development, space
-                        science, and creating educational technology that makes
-                        learning fun and accessible.
+                        Engineering), passionate about hardware, space science,
+                        and creating educational technology that makes learning
+                        fun and accessible.
                       </p>
                     </div>
                   </div>
@@ -90,9 +90,9 @@ export default function CreditsPage() {
 
                 <Card className="p-6 bg-card/90 backdrop-blur-sm border-2 border-primary/30 hover:border-primary/60 hover:shadow-xl hover:shadow-primary/20 transition-all duration-300 hover:scale-105">
                   <div className="flex flex-col items-center text-center space-y-4">
-                    <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-primary/50 shadow-lg">
+                    <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-primary/50 shadow-lg">
                       <img
-                        src="/team-member-3.png"
+                        src="/ivo.jpg"
                         alt="Ivo Filipovski"
                         className="w-full h-full object-cover"
                       />
@@ -101,8 +101,9 @@ export default function CreditsPage() {
                       <h3 className="text-2xl font-bold text-foreground">
                         Ivo Filipovski
                       </h3>
-                      <p className="text-secondary font-semibold mb-2">
-                        High School Student
+                      <p className="text-blue-500 font-semibold mb-2">
+                        High School <br />
+                        Student
                       </p>
                       <p className="text-sm text-muted-foreground leading-relaxed">
                         Student at Gjorgi Dimitrov High School with a keen
@@ -116,9 +117,9 @@ export default function CreditsPage() {
 
                 <Card className="p-6 bg-card/90 backdrop-blur-sm border-2 border-primary/30 hover:border-primary/60 hover:shadow-xl hover:shadow-primary/20 transition-all duration-300 hover:scale-105">
                   <div className="flex flex-col items-center text-center space-y-4">
-                    <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-primary/50 shadow-lg">
+                    <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-primary/50 shadow-lg">
                       <img
-                        src="/team-member-3.png"
+                        src="/pedzo.jpg"
                         alt="Petar Hristovski"
                         className="w-full h-full object-cover"
                       />
@@ -127,7 +128,7 @@ export default function CreditsPage() {
                       <h3 className="text-2xl font-bold text-foreground">
                         Petar Hristovski
                       </h3>
-                      <p className="text-secondary font-semibold mb-2">
+                      <p className="text-blue-500 font-semibold mb-2">
                         Computer Science & Engineering Student
                       </p>
                       <p className="text-sm text-muted-foreground leading-relaxed">
@@ -152,12 +153,28 @@ export default function CreditsPage() {
                     </h2>
                     <p className="text-muted-foreground leading-relaxed mb-4">
                       This project was developed at{" "}
-                      <span className="text-success font-bold">Base42</span> in
-                      Skopje, Macedonia - a vibrant innovation hub that supports
-                      technology education and entrepreneurship.
+                      <a
+                        href="https://base42.mk/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-success font-bold hover:text-success/80 transition-colors underline"
+                      >
+                        Base42
+                      </a>{" "}
+                      in Skopje, Macedonia - a hackerspace for builders and the
+                      curious, dedicated to knowledge sharing, community
+                      building, and collaborative learning.
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
-                      Base42 provided the perfect environment for collaboration,
+                      <a
+                        href="https://base42.mk/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-success font-bold hover:text-success/80 transition-colors underline"
+                      >
+                        Base42
+                      </a>{" "}
+                      provided the perfect environment for collaboration,
                       creativity, and innovation during the NASA Space Apps
                       Challenge hackathon.
                     </p>
@@ -171,8 +188,16 @@ export default function CreditsPage() {
                       Hosted on Local Servers
                     </h3>
                     <p className="text-muted-foreground leading-relaxed">
-                      The web application is hosted on local servers at Base42,
-                      showcasing the technical infrastructure and support
+                      The web application is hosted on local servers at{" "}
+                      <a
+                        href="https://base42.mk/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-success font-bold hover:text-success/80 transition-colors underline"
+                      >
+                        Base42
+                      </a>
+                      , showcasing the technical infrastructure and support
                       provided by the venue for hackathon participants.
                     </p>
                   </div>
@@ -189,17 +214,29 @@ export default function CreditsPage() {
                   </h2>
                   <p className="text-muted-foreground leading-relaxed mb-4">
                     Special thanks to{" "}
-                    <span className="text-success font-bold">
-                      NASA Space Apps Challenge
-                    </span>{" "}
+                    <a
+                      href="https://spaceapps.mk/#skopje"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-success font-bold hover:text-success/80 transition-colors underline"
+                    >
+                      NASA Space Apps Challenge Skopje
+                    </a>{" "}
                     for organizing this incredible global hackathon that brings
                     together innovators, scientists, and developers to solve
                     real-world challenges using NASA's open data.
                   </p>
                   <p className="text-muted-foreground leading-relaxed mb-4">
                     Thanks to{" "}
-                    <span className="text-success font-bold">Base42</span> for
-                    hosting the event and providing an inspiring space for
+                    <a
+                      href="https://base42.mk/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-success font-bold hover:text-success/80 transition-colors underline"
+                    >
+                      Base42
+                    </a>{" "}
+                    for hosting the event and providing an inspiring space for
                     innovation and collaboration.
                   </p>
                   <p className="text-muted-foreground leading-relaxed">
