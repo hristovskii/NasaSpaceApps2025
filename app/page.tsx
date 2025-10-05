@@ -198,22 +198,22 @@ export default function Home() {
 
             <div className="pt-12 mx-auto border-2 border-border/30 rounded-lg">
               <Card className="p-8 bg-gradient-to-br from-accent/10 via-secondary/10 to-primary/10 border-2 border-accent/30 backdrop-blur-sm hover:shadow-2xl transition-shadow">
-              <div className="flex items-start gap-4">
-                <div className="text-4xl animate-rotate-slow">☄️</div>
-                <div className="text-left">
-                <h3 className="text-2xl font-bold mb-3 text-foreground">
-                  About Impactor-2025
-                </h3>
-                <p className="text-muted-foreground leading-relaxed text-balance">
-                  Impactor-2025 is a fictional asteroid used for educational
-                  purposes. While not real, it represents the type of
-                  near-Earth objects that scientists monitor daily.
-                  Understanding asteroid impacts helps us prepare for
-                  planetary defense and appreciate the importance of space
-                  science.
-                </p>
+                <div className="flex items-start gap-4">
+                  <div className="text-4xl animate-rotate-slow">☄️</div>
+                  <div className="text-left">
+                    <h3 className="text-2xl font-bold mb-3 text-foreground">
+                      About Impactor-2025
+                    </h3>
+                    <p className="text-muted-foreground leading-relaxed text-balance">
+                      Impactor-2025 is a fictional asteroid used for educational
+                      purposes. While not real, it represents the type of
+                      near-Earth objects that scientists monitor daily.
+                      Understanding asteroid impacts helps us prepare for
+                      planetary defense and appreciate the importance of space
+                      science.
+                    </p>
+                  </div>
                 </div>
-              </div>
               </Card>
             </div>
           </div>

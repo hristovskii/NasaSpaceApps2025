@@ -1,0 +1,24 @@
+version: "3.9"
+
+services:
+  nextjs-app:
+    container_name: nasaspaceapps
+    image: ghcr.io/hristovskii/nasaspaceapps:latest
+    restart: always
+    ports:
+      - "3123:3000"
+    environment:
+      - NODE_ENV=production
+
+  watchtower:
+    container_name: watchtower
+    image: containrrr/watchtower:latest
+    restart: always
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      - WATCHTOWER_POLL_INTERVAL=10
+      - WATCHTOWER_CLEANUP=true
+      - WATCHTOWER_LABEL_ENABLE=true
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true"
